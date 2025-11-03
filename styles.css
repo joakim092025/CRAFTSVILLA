@@ -2,6 +2,9 @@
 PRIMARY COLORS: NAVY GREEN: #7B8574
 SECONDARY COLORS: LIGHTER GREEN: #BED0BF
 
-
-
 */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
