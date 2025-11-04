@@ -27,22 +27,40 @@
     <main>
         <h1>Unleash your creativity. Re-connect. Relax.</h1>
         <section>
-            <img id="gallery"
-            img src="./assets/1brianda-maldonado-VIaY9Knm8i8-unsplash.jpg" alt="greenish-pallet">
-            <img id="gallery"
-            img src="./assets/2zhenzhong-liu-wuUWKDmCxVQ-unsplash.jpg" alt="kid">
-            <img id="gallery"
-            img src="./assets/3raychan-kJQ6cDyodAM-unsplash.jpg" alt="boards">
-            <img id="gallery"
-            img src="./assets/4giulia-may-U3WBamd6MJ4-unsplash.jpg" alt="mosaic">
-            <img id="gallery"
-            img src="./assets/5kyle-ryan-fdvG_JVAOVw-unsplash.jpg" alt="workshop">
-        </section>
-        <section id="audiosection">
-            <audio controls autoplay muted loop>
-                <source src="./assets/ElevenLabs_Text_to_Speech_audio.mp3" type="audio/mp3">
-            </audio>
-            <a href="./assets/ElevenLabs_Text_to_Speech_audio.mp3"></a>
+            <form action="">
+                <legend>Book your spot!</legend>
+                <label for="firstname">First name:</label>
+                <input 
+                type="text" 
+                name="firstname" 
+                id="firstname"
+                placeholder="Gudrun" 
+                required/>
+                <br>
+                <label for="lastname">Last name:</label>
+                <input 
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Bergersen" />
+                <br>
+                <label for="phone">Phone number:</label>
+                <input 
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="12345678"
+                pattern="[0-9{8}]"/>
+                <br>
+                <label for="dateofbirth">Date of birth:</label>
+                <input 
+                type="date"
+                name="dateofbirth"
+                id="dateofbirth"
+                max="2025-01-01"
+                min="1925-01-01" />
+                <br>
+            </form>
         </section>
     </main>
     <footer>

@@ -50,10 +50,21 @@ cursor: pointer;
     height: 300px;
     width: 300px;
 }
+#header-logo{
+    height: 200px;
+    width: 200px;
+}
 h1 {
     color: #BED0BF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
 }
