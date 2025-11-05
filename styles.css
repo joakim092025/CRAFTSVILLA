@@ -1,6 +1,7 @@
 /* 
 PRIMARY COLORS: NAVY GREEN: #7B8574
 SECONDARY COLORS: LIGHTER GREEN: #BED0BF
+LOGO BLACK: #212020
 
 */
 
@@ -12,15 +13,13 @@ body{
     background-color: #7B8574;
 }
 nav {
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
  padding: 1.5rem 2rem;
- color: #fff;
+ color: #212020;
+ position: sticky;
 }
 .checkbtn { 
 font-size: 1.5rem;
-color: white;
+color: #212020;
 cursor: pointer;
 }
 .nav-mobile {
@@ -42,17 +41,32 @@ cursor: pointer;
  padding: 1rem 1.5rem;
  display: block;
 }
-#header-logo{
-    height: 400px;
-    width: 400px;
+input[type="checkbox"] {
+  display: none;
+}
+#gallery-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #gallery {
     height: 300px;
     width: 300px;
 }
-#header-logo{
+#header-logo {
     height: 200px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header a, footer a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
     color: #BED0BF;
