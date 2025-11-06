@@ -50,17 +50,18 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 100px;
+}
+#gallery {
+    height: 300px;
+    width: 300px;
+    border: solid #BED0BF;
 }
 #audio-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#gallery {
-    height: 300px;
-    width: 300px;
-    border: solid #BED0BF;
 }
 #header-logo {
     height: 200px;
@@ -89,16 +90,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     color: #212020;
     margin: 20px;
+    gap: 20px;
+    padding: 0px;
 }
 p{
     font-family: "Quicksand", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
 }
 #booking-section {
@@ -126,25 +125,64 @@ fieldset {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  height: 22px;
-  width: 200px;
-  border-radius: 15px;
-  border: none;
-  background-color:#BED0BF;
-  padding: 5px;
-  color: #212020;
+display: flexbox;
+justify-content: center;
+align-items: center;
+height: 22px;
+width: 200px;
+border-radius: 15px;
+border: none;
+background-color:#BED0BF;
+margin-left: 10px;
+padding: 5px;
+color: #212020;
 }
 input::placeholder {
   color: #212020;
   font-style: italic;
 }
 #forms {
-    margin-top: 5%;
-    margin-left: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #booking-section p {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: solid 2px #212020;
+    background-color: #BED0BF;
+    margin: 20px;
+    padding: 20px;
+}
+#aboutimg {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#artsyfourppl {
+    height: 400px;
+    width: 400px;
+    filter: brightness(0.9);
+}
+.about p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    border: solid 2px #212020;
+    background-color: #BED0BF;
+}
+#contact p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #212020;
+    background-color: #BED0BF;
+    margin: 100px;
+    padding: 20px;
 }
