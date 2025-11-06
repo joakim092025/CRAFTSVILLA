@@ -46,6 +46,13 @@ input[type="checkbox"] {
 }
 #gallery-section{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#audio-section{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -53,6 +60,7 @@ input[type="checkbox"] {
 #gallery {
     height: 300px;
     width: 300px;
+    border: solid #BED0BF;
 }
 #header-logo {
     height: 200px;
@@ -69,16 +77,74 @@ header a, footer a{
     align-items: center;
 }
 h1 {
-    color: #BED0BF;
+    font-family: "Oswald", sans-serif;
+    color: #212121;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+h2 {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #212020;
+    margin: 20px;
+}
 p{
+    font-family: "Quicksand", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 18px;
+}
+#booking-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+label {
+  font-size: 18px;
+  font-family: "Quicksand"
+}
+legend {
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  color: #212121;
+}
+fieldset {
+  border: 3px solid #BED0BF;
+  border-radius: 10px;
+  width: 400px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 22px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  background-color:#BED0BF;
+  padding: 5px;
+  color: #212020;
+}
+input::placeholder {
+  color: #212020;
+  font-style: italic;
+}
+#forms {
+    margin-top: 5%;
+    margin-left: 33%;
+}
+#booking-section p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

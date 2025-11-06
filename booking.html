@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="styles.css">
     <title>CRAFTSVILLA</title>
@@ -27,9 +30,21 @@
             </a>
     </header>
     <main>
-        <h1>Reserve your spot at the table!</h1>
-        <section>
+        <h1>Reserve your spot at the table!</h1><br>
+        <section id="booking-section">
+            <h2>Available art forms and sets: <br></h2>
+            <p>
+                Mosaic Art – 400 NOK: <br>
+                Set includes: Frame, A4-sized wooden board, small colored stones, glue. <br>
+                Watercolor Painting – 200 NOK: <br> 
+                Set includes: Frame, watercolor paper with design template, watercolor paints, brushes. <br>
+                Canvas Painting – 300 NOK: <br>
+                Set includes: Frame, acrylic paper with design template, acrylic paints, brushes. <br>
+                (Note: More art forms will be introduced in the future.)</p>
+            </section>
+        <section id="forms">
             <form action="">
+                <fieldset>
                 <legend>Book your spot!</legend>
                 <label for="firstname">First name:</label>
                 <input 
@@ -61,7 +76,21 @@
                 id="dateofbirth"
                 max="2025-01-01"
                 min="1925-01-01" />
+                <br><br>
+            <fieldset id="pickarts">
+                <legend>What art form would you like?</legend>
+                <label for="arts">Choose your arts:</label>
+                <br />
+                <input type="radio" name="arts" id="mosaic" />
+                <label for="mosaic">Mosaic Arts</label> <br />
+                <input type="radio" name="arts" id="watercolor" />
+                <label for="watercolor">Water Coloring</label><br />
+                <input type="radio" name="arts" id="canvas" />
+                <label for="canvas">Canvas Painting</label>
+            </fieldset>
                 <br>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset form" />
             </form>
         </section>
     </main>
